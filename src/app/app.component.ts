@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'John JP Cashman';
+  title = 'John Cashman Heytesbury Map';
+  lat: number=53.334684;
+  lng: number=-6.268933;
+  
+
 }
