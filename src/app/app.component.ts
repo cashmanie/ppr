@@ -68,6 +68,8 @@ export class AppComponent {
     var newLat=$event.coords.lat;
     var newLng=$event.coords.lng;
 
+    console.log('new latidude= '+ newLat +'\n new longitude='+ newLng)
+
   }
   
 }

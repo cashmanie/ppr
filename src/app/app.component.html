@@ -1,35 +1,71 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!
-  </h1>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown01">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+
+</nav>
+<div class="container">
+
+    <agm-map 
+    [latitude]="lat" 
+    [longitude]="lng"  
+    [zoom]="zoom"
+    [disableDefaultUI]="false"
+    (mapClick)="mapClicked($event)"
+  >
+      <agm-marker *ngFor="let m of markers; let i = index"
+      (markerClick)="clickedMarker(m, i)"
+      [latitude]="m.lat"
+      [longitude]="m.lng"
+      [label]="m.label"
+      [markerDraggable]="m.draggable" 
+      (dragEnd)="markerDragEnd(m, $event)"> 
+
+ 
+    <agm-snazzy-info-window [maxWidth]="200" [closeWhenOthersOpen]="true">
+        <ng-template>
+          Latidude: {{m.lat}}<br>
+          Longitude: {{m.lng}}
+        </ng-template>
+    </agm-snazzy-info-window>
+  
+  </agm-marker>
+</agm-map>
+
+
+
+
+</div><!-- /.container -->
+
+
 
   
-    <agm-map 
-      [latitude]="lat" 
-      [longitude]="lng"  
-      [zoom]="zoom"
-      [disableDefaultUI]="false"
-      (mapClick)="mapClicked($event)"
-    >
-        <agm-marker *ngFor="let m of markers; let i = index"
-        (markerClick)="clickedMarker(m, i)"
-        [latitude]="m.lat"
-        [longitude]="m.lng"
-        [label]="m.label"
-        [markerDraggable]="m.draggable" 
-        (dragEnd)="markerDragEnd(m, $event)"> 
-
-   
-      <agm-snazzy-info-window [maxWidth]="200" [closeWhenOthersOpen]="true">
-          <ng-template>
-            Latidude: {{m.lat}}<br>
-            Longitude: {{m.lng}}
-          </ng-template>
-      </agm-snazzy-info-window>
-    
-    </agm-marker>
-  </agm-map>
-</div>
-
 
