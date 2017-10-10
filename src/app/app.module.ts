@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { AgmCoreModule } from '@agm/core';
+import { AgmSnazzyInfoWindowModule } from '@agm/snazzy-info-window';
 
 @NgModule({
   declarations: [
@@ -14,8 +15,10 @@ import { AgmCoreModule } from '@agm/core';
     CommonModule,
     FormsModule,
     AgmCoreModule.forRoot({
-      apiKey : 'AIzaSyAbfsWUUSQm2dYLH5W4KIomKDBF_F2GIpU'  
-    })
+      apiKey : 'AIzaSyAbfsWUUSQm2dYLH5W4KIomKDBF_F2GIpU' ,
+      libraries: ["places"] 
+    }),   
+    AgmSnazzyInfoWindowModule
 
   ],
   providers: [],
