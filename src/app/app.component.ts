@@ -13,7 +13,7 @@ export class AppComponent {
 
   lat: number=53.334684;
   lng: number=-6.268933;
-  zoom: number= 17;
+  zoom: number= 16;
   
   
   markers: marker[] = [
