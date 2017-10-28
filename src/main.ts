@@ -8,5 +8,9 @@ if (environment.production) {
   enableProdMode();
 }
 
+<<<<<<< HEAD
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.log(err));
+=======
+platformBrowserDynamic().bootstrapModule(AppModule);
+>>>>>>> refs/remotes/origin/master

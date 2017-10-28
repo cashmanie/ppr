@@ -1,7 +1,11 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
+<<<<<<< HEAD
     "name": "ppr"
+=======
+    "name": "ppr1"
+>>>>>>> refs/remotes/origin/master
   },
   "apps": [
     {
@@ -19,10 +23,22 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
+<<<<<<< HEAD
         "styles.css",
         "../node_modules/snazzy-info-window/dist/snazzy-info-window.css"
       ],
       "scripts": [],
+=======
+        "../node_modules/snazzy-info-window/dist/snazzy-info-window.css",
+        "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+        "styles.css"
+      ],
+      "scripts": [
+        "../node_modules/jquery/dist/jquery.slim.min.js",
+        "../node_modules/popper.js/dist/umd/popper.min.js",
+        "../node_modules/bootstrap/dist/js/bootstrap.min.js"
+      ],
+>>>>>>> refs/remotes/origin/master
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
@@ -37,6 +53,7 @@
   },
   "lint": [
     {
+<<<<<<< HEAD
       "project": "src/tsconfig.app.json",
       "exclude": "**/node_modules/**"
     },
@@ -47,6 +64,15 @@
     {
       "project": "e2e/tsconfig.e2e.json",
       "exclude": "**/node_modules/**"
+=======
+      "project": "src/tsconfig.app.json"
+    },
+    {
+      "project": "src/tsconfig.spec.json"
+    },
+    {
+      "project": "e2e/tsconfig.e2e.json"
+>>>>>>> refs/remotes/origin/master
     }
   ],
   "test": {
