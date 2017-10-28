@@ -31,19 +31,8 @@
     "member-access": false,
     "member-ordering": [
       true,
-<<<<<<< HEAD
-      {
-        "order": [
-          "static-field",
-          "instance-field",
-          "static-method",
-          "instance-method"
-        ]
-      }
-=======
       "static-before-instance",
       "variables-before-functions"
->>>>>>> refs/remotes/origin/master
     ],
     "no-arg": true,
     "no-bitwise": true,
@@ -91,10 +80,6 @@
     ],
     "radix": true,
     "semicolon": [
-<<<<<<< HEAD
-      true,
-=======
->>>>>>> refs/remotes/origin/master
       "always"
     ],
     "triple-equals": [
@@ -143,11 +128,8 @@
     "use-pipe-transform-interface": true,
     "component-class-suffix": true,
     "directive-class-suffix": true,
-<<<<<<< HEAD
-=======
     "no-access-missing-member": true,
     "templates-use-public": true,
->>>>>>> refs/remotes/origin/master
     "invoke-injectable": true
   }
 }

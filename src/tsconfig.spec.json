@@ -2,15 +2,9 @@
   "extends": "../tsconfig.json",
   "compilerOptions": {
     "outDir": "../out-tsc/spec",
-<<<<<<< HEAD
-    "baseUrl": "./",
-    "module": "commonjs",
-    "target": "es5",
-=======
     "module": "commonjs",
     "target": "es5",
     "baseUrl": "",
->>>>>>> refs/remotes/origin/master
     "types": [
       "jasmine",
       "node"

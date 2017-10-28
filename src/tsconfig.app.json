@@ -2,13 +2,8 @@
   "extends": "../tsconfig.json",
   "compilerOptions": {
     "outDir": "../out-tsc/app",
-<<<<<<< HEAD
-    "baseUrl": "./",
-    "module": "es2015",
-=======
     "module": "es2015",
     "baseUrl": "",
->>>>>>> refs/remotes/origin/master
     "types": []
   },
   "exclude": [

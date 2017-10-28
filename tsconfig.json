@@ -2,10 +2,7 @@
   "compileOnSave": false,
   "compilerOptions": {
     "outDir": "./dist/out-tsc",
-<<<<<<< HEAD
-=======
     "baseUrl": "src",
->>>>>>> refs/remotes/origin/master
     "sourceMap": true,
     "declaration": false,
     "moduleResolution": "node",
@@ -16,11 +13,7 @@
       "node_modules/@types"
     ],
     "lib": [
-<<<<<<< HEAD
-      "es2017",
-=======
       "es2016",
->>>>>>> refs/remotes/origin/master
       "dom"
     ]
   }
